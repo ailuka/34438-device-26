@@ -8,64 +8,64 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-          <a href="index.html">
-            <img src="img/logo.svg" width="100" height="50" alt="Логотип магазина «Девайс»">
-          </a>
-          <form action="http://echo.htmlacademy.ru" method="GET">
-            <label for="field-search">Поиск по сайту</label>
-            <input type="text" name="search" id="field-search">
-            <button type="submit">Найти</button>
-          </form>
-          <ul>
-            <li>
-              <a href="#">Валентин Петухов</a>
-            </li>
-            <li>
-              <a href="index.html">Выйти</a>
-            </li>
-            <li>
-              <a href="#">Сравнить</a>
-            </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-          <ul role="menubar">
-            <li role="menuitem" aria-haspopup="true">
-              <a href="catalog.html">Каталог товаров</a>
-              <ul class="visually-hidden" role="menu">
-                  <li role="menuitem">
-                    <a href="">Виртуальная реальность</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="">Моноподы для селфи</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="">Экшн-камеры</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="">Фитнес-браслеты</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="">Умные часы</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="">Квадрокоптеры</a>
-                  </li>
-                </ul>
-            </li>
-            <li role="menuitem">
-              <a href="#">Доставка</a>
-            </li>
-            <li role="menuitem">
-              <a href="#">Гарантия</a>
-            </li>
-            <li role="menuitem">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+    <header class="header">
+      <nav class="navigation">
+        <a href="index.html">
+          <img src="img/logo.svg" width="100" height="50" alt="Логотип магазина «Девайс»">
+        </a>
+        <form action="http://echo.htmlacademy.ru" method="GET">
+          <label for="field-search">Поиск по сайту</label>
+          <input type="text" name="search" id="field-search">
+          <button type="submit">Найти</button>
+        </form>
+        <ul class="user-navigation">
+          <li>
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li class="logout">
+            <a href="index.html">Выйти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="site-navigation" role="menubar">
+          <li class="site-navigation-item" role="menuitem" aria-haspopup="true">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="visually-hidden site-subnavigation" role="menu">
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Виртуальная реальность</a>
+              </li>
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Моноподы для селфи</a>
+              </li>
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Экшн-камеры</a>
+              </li>
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Фитнес-браслеты</a>
+              </li>
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Умные часы</a>
+              </li>
+              <li class="site-subnavigation-item" role="menuitem">
+                <a href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-navigation-item" role="menuitem">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item" role="menuitem">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item" role="menuitem">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>

@@ -13,3 +13,50 @@
   font-weight: normal;
   font-style: normal;
 }
+.header {
+  width: 1160px;
+  height: 299px;
+  margin-top: 40px;
+
+  background-color: #f7e296;
+}
+
+.site-navigation,
+.site-navigation ul,
+.user-navigation {
+  list-style: none;
+}
+
+.user-navigation a {
+  font: inherit;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.site-navigation a {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.user-navigation a:hover,
+.site-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:focus,
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout a:hover {
+  color: rgba(0, 0, 0, 1);
+}
