@@ -60,3 +60,44 @@
 .logout a:hover {
   color: rgba(0, 0, 0, 1);
 }
+.footer {
+  background-color: #464646;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-site-navigation,
+.footer-user-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-user-navigation a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.footer-site-navigation a:hover,
+.footer-user-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:focus,
+.footer-user-navigation a:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.socials-list {
+  list-style: none;
+}
