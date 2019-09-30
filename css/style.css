@@ -91,6 +91,15 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
 .breadcrumbs {
   list-style: none;
 }
