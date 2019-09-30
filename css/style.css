@@ -139,6 +139,47 @@
 .item-add:focus {
   color: rgba(0, 0, 0, 0.2);
 }
+
+.pagination {
+  width: 760px;
+  background-color: #ebebeb;
+}
+
+.pagination a {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-button {
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+}
+
+.pagination-button:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
 .footer {
   background-color: #464646;
   color: rgba(255, 255, 255, 1);
