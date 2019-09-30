@@ -120,6 +120,22 @@
 .breadcrumbs a:focus {
   color: rgba(0, 0, 0, 0.1);
 }
+
+.index-column h3 {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.index-column ul {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
 .catalog-list {
   list-style: none;
 }
