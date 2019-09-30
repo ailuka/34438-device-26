@@ -71,9 +71,53 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #000000;
+  text-align: left;
+}
+
+.catalog-list a {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.item-price {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 .item-img-overlay {
   display: none;
   background-color: rgba(202, 202, 202, 0.7);
+}
+
+.item-add {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+
+  background-color: transparent;
+  border: none;
+}
+
+.item-add:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.item-add:focus {
+  color: rgba(0, 0, 0, 0.2);
 }
 .footer {
   background-color: #464646;
