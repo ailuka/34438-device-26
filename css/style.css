@@ -60,6 +60,21 @@
 .logout a:hover {
   color: rgba(0, 0, 0, 1);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.item-img-overlay {
+  display: none;
+  background-color: rgba(202, 202, 202, 0.7);
+}
 .footer {
   background-color: #464646;
   color: rgba(255, 255, 255, 1);
@@ -100,4 +115,8 @@
 
 .socials-list {
   list-style: none;
+}
+
+.modal {
+  display: none;
 }
