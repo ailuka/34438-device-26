@@ -13,6 +13,26 @@
   font-weight: normal;
   font-style: normal;
 }
+.button {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .header {
   width: 1160px;
   height: 299px;
