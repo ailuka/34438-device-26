@@ -63,6 +63,7 @@ body {
 .user-navigation a {
   font: inherit;
   color: rgba(0, 0, 0, 1);
+  line-height: 24px;
   text-decoration: none;
 }
 
@@ -160,6 +161,10 @@ body {
   font-size: 16px;
   line-height: 40px;
   color: #000000;
+}
+
+.index-column p {
+  line-height: 30px;
 }
 
 .catalog-list {
@@ -278,6 +283,10 @@ body {
 .footer {
   background-color: #464646;
   color: rgba(255, 255, 255, 1);
+}
+
+.footer p {
+  line-height: 24px;
 }
 
 .footer-site-navigation,
