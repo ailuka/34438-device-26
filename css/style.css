@@ -153,6 +153,30 @@ body {
   list-style: none;
 }
 
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-input + label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 1);
+}
+
 .catalog-list h3 {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
