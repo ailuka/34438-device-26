@@ -35,7 +35,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: #f0c52e;
+  background-image: linear-gradient(transparent 6px, #f0c52e 6px, #f0c52e 14px, transparent 14px);
 }
 
 .button:hover {
