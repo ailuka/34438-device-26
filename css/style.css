@@ -372,6 +372,41 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
+.filter h2,
+.sort h2 {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort {
+  background-color: #ebebeb;
+}
+
+.sort-options-list {
+  list-style: none;
+}
+
+.sort-option-item a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.sort-option-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-option-item a:focus,
+.current-option a {
+  color: rgba(0, 0, 0, 1);
+}
+
 .catalog-list h3 {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
