@@ -293,6 +293,10 @@ body {
   line-height: 25px;
 }
 
+.partners-list {
+  list-style: none;
+}
+
 .index-column ul {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 16px;
