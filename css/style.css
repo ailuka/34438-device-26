@@ -190,7 +190,52 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.index-column h3 {
+.promo-slide-number {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo-slide h3 {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.promo-slide p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.promo-slide tr {
+  text-align: left;
+}
+
+.promo-slide th {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.promo-slide td {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.promo-controls {
+  list-style: none;
+}
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
