@@ -108,6 +108,48 @@ body {
   text-transform: none;
 }
 
+.search-form input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: transparent;
+  border: none;
+}
+
+.search-form input:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form input:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 1);
+}
+
+.search-button:focus {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+  outline: transparent;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
