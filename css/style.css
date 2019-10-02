@@ -236,6 +236,27 @@ body {
 .promo-controls {
   list-style: none;
 }
+
+.product-category-list {
+  list-style: none;
+}
+
+.product-category-list a,
+.product-category-list h3 {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.product-category-image-wrapper {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
+
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
