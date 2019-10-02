@@ -308,6 +308,42 @@ body {
   line-height: 30px;
 }
 
+.letter-item label {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.letter-item input,
+.letter-item textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+}
+
+.letter-item input:hover,
+.letter-item textarea:hover {
+  background-color: #eaeaea;
+  border: 3px solid #eaeaea;
+}
+
+.letter-item input:focus,
+.letter-item textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+  outline: transparent;
+}
+
+.letter-item .error {
+  background-color: #f6dada;
+  border: 3px solid #f6dada;
+}
+
 .catalog-list {
   list-style: none;
 }
