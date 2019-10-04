@@ -74,115 +74,110 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html">Главная</a>
           </li>
-          <li class="site-navigation-item" role="menuitem">
-            <a href="#">Доставка</a>
+          <li>
+            <a href="">Каталог товаров</a>
           </li>
-          <li class="site-navigation-item" role="menuitem">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="site-navigation-item" role="menuitem">
-            <a href="#">Контакты</a>
+          <li>
+            <a>Моноподы для селфи</a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="">Каталог товаров</a>
-        </li>
-        <li>
-          <a>Моноподы для селфи</a>
-        </li>
-      </ul>
-      <section class="filter">
-        <h2>Фильтр:</h2>
-        <form action="http://echo.htmlacademy.ru" method="GET">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <label class="visually-hidden" for="control-min-price">Минимальная стоимость</label>
-            <input type="number" name="min-price" id="control-min-price">
-            <label class="visually-hidden" for="control-max-price">Максимальная стоимость</label>
-            <input type="number" name="max-price" id="control-max-price">
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul>
-              <li>
-                <input class="filter-input" type="checkbox" name="color-black" id="filter-color-black" checked>
-                <label for="filter-color-black">Черный</label>
-              </li>
-              <li>
-                <input class="filter-input" type="checkbox" name="color-white" id="filter-color-white">
-                <label for="filter-color-white">Белый</label>
-              </li>
-              <li>
-                <input class="filter-input" type="checkbox" name="color-blue" id="filter-color-blue" checked>
-                <label for="filter-color-blue">Синий</label>
-              </li>
-              <li>
-                <input class="filter-input" type="checkbox" name="color-red" id="filter-color-red" checked>
-                <label for="filter-color-red">Красный</label>
-              </li>
-              <li>
-                <input class="filter-input" type="checkbox" name="color-pink" id="filter-color-pink">
-                <label for="filter-color-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
-              <li>
-                <input class="filter-input" type="radio" name="filter-bluetooth" id="filter-bluetooth-yes" checked>
-                <label for="filter-bluetooth-yes">Есть</label>
-              </li>
-              <li>
-                <input class="filter-input" type="radio" name="filter-bluetooth" id="filter-bluetooth-no">
-                <label for="filter-bluetooth-no">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button" type="submit">Показать</button>
-        </form>
-      </section>
-      <section class="filtered-products">
-        <h2 class="visually-hidden">Список моноподов для селфи</h2>
-        <div class="sort">
-          <h2>Сортировка:</h2>
-          <ul class="sort-options-list">
-            <li class="sort-option-item current-option">
-              <a href="">По цене</a>
-            </li>
-            <li class="sort-option-item">
-              <a href="">По типу</a>
-            </li>
-            <li class="sort-option-item">
-              <a href="">По популярности</a>
-            </li>
-          </ul>
-          <ul class="sort-options-list">
-            <li>
-              <a href="" aria-label="Сортировать">
-                <span class="visually-hidden">по возрастанию</span>
-              </a>
-            </li>
-            <li>
-              <a href="" aria-label="Сортировать">
-                <span class="visually-hidden">по убыванию</span>
-              </a>
-            </li>
-          </ul>
+      </div>
+      <div class="filtered-wrapper">
+        <section class="filter">
+        <div class="filter-title-wrapper">
+          <h2 class="filter-title">Фильтр:</h2>
         </div>
+            <form class="filter-form" action="http://echo.htmlacademy.ru" method="GET">
+              <fieldset>
+                <legend>Стоимость</legend>
+                <label class="visually-hidden" for="control-min-price">Минимальная стоимость</label>
+                <input type="number" name="min-price" id="control-min-price">
+                <label class="visually-hidden" for="control-max-price">Максимальная стоимость</label>
+                <input type="number" name="max-price" id="control-max-price">
+              </fieldset>
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="color-black" id="filter-color-black" checked>
+                    <label for="filter-color-black">Черный</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="color-white" id="filter-color-white">
+                    <label for="filter-color-white">Белый</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="color-blue" id="filter-color-blue" checked>
+                    <label for="filter-color-blue">Синий</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="color-red" id="filter-color-red" checked>
+                    <label for="filter-color-red">Красный</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="color-pink" id="filter-color-pink">
+                    <label for="filter-color-pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li>
+                    <input class="filter-input" type="radio" name="filter-bluetooth" id="filter-bluetooth-yes" checked>
+                    <label for="filter-bluetooth-yes">Есть</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="radio" name="filter-bluetooth" id="filter-bluetooth-no">
+                    <label for="filter-bluetooth-no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button" type="submit">Показать</button>
+            </form>
+        </section>
+        <section class="filtered-products">
+        <h2 class="visually-hidden">Список моноподов для селфи</h2>
+        <div class="sort-wrapper">
+            <div class="sort">
+                <h2>Сортировка:</h2>
+                <ul class="sort-options-list sort-parameters">
+                  <li class="sort-option-item current-option">
+                    <a href="">По цене</a>
+                  </li>
+                  <li class="sort-option-item">
+                    <a href="">По типу</a>
+                  </li>
+                  <li class="sort-option-item">
+                    <a href="">По популярности</a>
+                  </li>
+                </ul>
+                <ul class="sort-options-list sort-up-down">
+                  <li>
+                    <a href="" aria-label="Сортировать">
+                      <span class="visually-hidden">по возрастанию</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" aria-label="Сортировать">
+                      <span class="visually-hidden">по убыванию</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+
         <ul class="catalog-list">
-          <li>
-            <div>
-              <h3>
+          <li class="catalog-item">
+            <div class="item-information">
+              <h3 class="item-name">
                 <a href="">Любительская селфи-палка</a>
               </h3>
               <span class="item-price">500 руб.</span>
@@ -193,9 +188,9 @@
               <button class="item-add" type="button">Добавить к сравнению</button>
             </div>
           </li>
-          <li>
-            <div>
-              <h3>
+          <li class="catalog-item">
+            <div class="item-information">
+              <h3 class="item-name">
                 <a href="">Профессиональная селфи-палка</a>
               </h3>
               <span class="item-price">1500 руб.</span>
@@ -206,9 +201,9 @@
               <button class="item-add" type="button">Добавить к сравнению</button>
             </div>
           </li>
-          <li>
-            <div>
-              <h3>
+          <li class="catalog-item">
+            <div class="item-information">
+              <h3 class="item-name">
                 <a href="">Непотопляемая селфи-палка</a>
               </h3>
               <span class="item-price">2500 руб.</span>
@@ -219,10 +214,10 @@
               <button class="item-add" type="button">Добавить к сравнению</button>
             </div>
           </li>
-          <li>
-            <div>
-              <h3>
-                <a href="">Непотопляемая селфи-палка</a>
+          <li class="catalog-item">
+            <div class="item-information">
+              <h3 class="item-name">
+                <a href="">Селфи-палка «Следуй за мной»</a>
               </h3>
               <span class="item-price">4900 руб.</span>
             </div>

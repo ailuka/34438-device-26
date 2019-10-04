@@ -431,10 +431,6 @@ body {
   text-transform: uppercase;
 }
 
-.sort {
-  background-color: #ebebeb;
-}
-
 .sort-options-list {
   list-style: none;
 }
@@ -672,6 +668,12 @@ item-add:focus {
   margin-bottom: 90px;
 }
 
+.breadcrumbs {
+  padding: 0;
+  padding-left: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
 
 .decor-line {
   width: 80px;
@@ -689,6 +691,124 @@ main .decor-line {
 .about-us {
   padding-right: 100px;
 }
+
+.filtered-wrapper {
+  display: flex;
+}
+
+.filter {
+  flex: 1.08;
+  background-image: linear-gradient(#efefef, #eeeeee);
+}
+
+.filtered-products {
+  flex: 2;
+}
+
+.filter-title-wrapper {
+  background-image: linear-gradient(#dcdcdc, #dbdbdb);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.filter-title {
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 68px;
+}
+
+.filter-form {
+  width: 200px;
+  margin-left: auto;
+  margin-right: 68px;
+}
+
+.filter-form fieldset {
+  padding: 0;
+}
+
+.sort-wrapper {
+  background-color: #ebebeb;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 760px;
+  padding-left: 72px;
+  padding-right: 20px;
+}
+
+.sort h2 {
+  width: 160px;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.sort-options-list {
+  padding: 0;
+  margin: 0;
+}
+
+.sort-parameters {
+  width: 560px;
+}
+
+.sort-up-down {
+  width: 45px;
+  margin-left: auto;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+  margin-left: 72px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.item-information {
+  order: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-name {
+  margin: 0;
+  margin-top: 37px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 72px;
+  margin-bottom: 77px;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+}
+
 .footer {
   padding-top: 65px;
   padding-bottom: 62px;
