@@ -666,6 +666,29 @@ item-add:focus {
   padding: 0;
 }
 
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+
+.decor-line {
+  width: 80px;
+  height: 7px;
+}
+
+main .decor-line {
+  background-color: #000000;
+}
+
+.index-column {
+  width: 560px;
+}
+
+.about-us {
+  padding-right: 100px;
+}
 .footer {
   padding-top: 65px;
   padding-bottom: 62px;
