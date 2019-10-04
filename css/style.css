@@ -665,3 +665,22 @@ item-add:focus {
   margin: 0;
   padding: 0;
 }
+
+.footer {
+  padding-top: 65px;
+  padding-bottom: 62px;
+}
+
+.footer-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-user-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+footer .decor-line {
+  background-color: #ffc600;
+}
