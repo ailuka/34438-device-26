@@ -51,14 +51,6 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header {
-  width: 1160px;
-  height: 299px;
-  margin-top: 40px;
-
-  background-color: #f7e296;
-}
-
 .site-navigation,
 .site-navigation ul,
 .user-navigation {
@@ -622,6 +614,54 @@ item-add:focus {
 }
 
 .modal {
-  display: block;
+  display: none;
   background-color: #ffffff;
+}
+
+/* --- Стили для сетки --- */
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.navigation-wrapper {
+  background-color: #f7e296;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.user-navigation-wrapper {
+  display: flex;
+}
+
+.search-form {
+  width: 500px;
+}
+
+.site-navigation {
+  padding: 0;
+}
+
+.page-title {
+  padding-left: 60px;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.user-navigation {
+  width: 500px;
+  margin: 0;
+  padding: 0;
 }
