@@ -320,7 +320,6 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  letter-spacing: 1px;
   color: #464646;
 }
 
@@ -765,6 +764,10 @@ item-add:focus {
   padding-right: 0;
 }
 
+.product-categories {
+  padding-bottom: 80px;
+}
+
 .product-category-list {
   padding: 0;
   margin: 0;
@@ -802,6 +805,40 @@ item-add:focus {
   margin: 100px 0;
   display: flex;
   justify-content: space-around;
+}
+
+.services {
+  width: 100%;
+  background-image: linear-gradient(transparent 100px, #e5e5e5 100px, #e5e5e5 388px, transparent 388px);
+}
+
+.services .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list {
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  width: 280px;
+  height: 169px;
+  border-right: 7px solid #000000;
+}
+
+.services-wrapper {
+  width: 760px;
+}
+
+.service-description {
+  padding-right: 330px;
+  padding-top: 80px;
+}
+
+.service-description h3 {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .index-column {
