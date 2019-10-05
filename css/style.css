@@ -680,8 +680,89 @@ item-add:focus {
   height: 7px;
 }
 
-main .decor-line {
+.information .decor-line {
   background-color: #000000;
+}
+
+.promo-slider {
+  height: 520px;
+  margin-bottom: 75px;
+  background-image: linear-gradient( #f7e296 113px, transparent 113px);
+  position: relative;
+}
+
+.promo-controls {
+  /* временно */
+  position: absolute;
+  right: 80px;
+  top: 327px;
+}
+
+.promo-decor-line {
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+.promo-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-image-wrapper,
+.promo-description-wrapper {
+  width: 560px;
+}
+
+.promo-image-wrapper img {
+  display: block;
+  margin: auto;
+}
+
+.promo-description-wrapper {
+  position: relative;
+}
+
+.promo-decor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-decor-line {
+  margin-top: 39px;
+}
+
+.promo-slide-number {
+  margin-right: 60px;
+}
+
+.promo-description {
+  position: absolute;
+  top: 93px;
+  margin-right: 60px;
+}
+
+.promo-description h3 {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.promo-description p {
+  margin: 33px 0;
+}
+
+.promo-description table {
+  margin-top: 50px;
+}
+
+.promo-description td,
+.promo-description th {
+  padding-right: 80px;
+}
+
+.promo-description td:last-child,
+.promo-description th:last-child {
+  padding-right: 0;
 }
 
 .index-column {
