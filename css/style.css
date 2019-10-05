@@ -765,6 +765,38 @@ item-add:focus {
   padding-right: 0;
 }
 
+.product-category-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.product-category {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.product-category:nth-child(6n) {
+  margin-right: 0;
+}
+
+.product-category a {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category h3 {
+  order: 1;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.product-category-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .index-column {
   width: 560px;
 }
