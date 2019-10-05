@@ -797,6 +797,13 @@ item-add:focus {
   align-items: center;
 }
 
+.partners-list {
+  padding: 0;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
 .index-column {
   width: 560px;
 }
