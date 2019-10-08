@@ -562,13 +562,36 @@ body {
   list-style: none;
 }
 
+
+.index-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 560px;
+}
+
 .index-column h3 {
+  position: relative;
+  margin: 50px 0;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 1px;
   color: #000000;
+}
+
+.index-column h3::before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  content: "";
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .index-column ul {
@@ -579,8 +602,50 @@ body {
   color: #000000;
 }
 
+.index-column .map-link {
+  display: block;
+  width: 560px;
+  height: 222px;
+  margin-bottom: 80px;
+}
+
+.index-list {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  list-style: none;
+}
+
+.index-list-item {
+  position: relative;
+
+  padding: 0;
+  padding-left: 35px;
+}
+
+.index-list-item::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
 .index-column p {
   line-height: 30px;
+  margin: 40px 0;
+}
+
+.index-column .button {
+  width: 260px;
+  margin-top: auto;
 }
 
 .letter-item label {
