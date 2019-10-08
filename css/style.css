@@ -852,17 +852,103 @@ item-add:focus {
 }
 
 .footer {
+  padding-top: 65px;
+  padding-bottom: 62px;
+
   background-color: #464646;
   color: rgba(255, 255, 255, 1);
 }
 
+.footer-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-row-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.footer-row-center {
+  align-items: center;
+}
+
+.footer-user-navigation,
+.footer-cart-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-user-navigation li {
+  margin-right: 20px;
+}
+
+.footer-user-navigation li:last-child {
+  margin-right: 40px;
+}
+
+.footer-cart-navigation li {
+  margin-right: 40px;
+}
+
+.footer-cart-navigation li:last-child {
+  margin-right: 0;
+}
+
+.footer-user-navigation-link path {
+  fill: #ffc600;
+}
+
+.footer-user-navigation-link span {
+  margin-left: 10px;
+}
+
+footer .decor-line {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
+.footer-logo path {
+  fill: #ffc600;
+}
+
+.copyright path {
+  fill: #ffc600;
+}
+
+.footer-logo {
+  flex-grow: 2;
+}
+
+.footer-logo:hover,
+.footer-logo:focus,
+.copyright:hover,
+.copyright:focus {
+  opacity: 0.6;
+}
+
+.footer-logo:active,
+.copyright:active {
+  opacity: 0.3;
+}
+
 .footer p {
+  margin: 0;
   line-height: 30px;
 }
 
-.footer-site-navigation,
-.footer-user-navigation {
+.footer-site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer-site-navigation-item{
+  margin: 0 19px;
 }
 
 .footer-site-navigation a {
@@ -885,7 +971,8 @@ item-add:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-user-navigation a {
+.footer-user-navigation a,
+.footer-cart-navigation a {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -896,16 +983,62 @@ item-add:focus {
 }
 
 .footer-user-navigation a:hover,
-.footer-user-navigation a:focus{
+.footer-user-navigation a:focus,
+.footer-cart-navigation a:hover,
+.footer-cart-navigation a:focus {
   color: rgba(255, 255, 255, 1);
 }
 
-.footer-user-navigation a:active {
+.footer-user-navigation a:active,
+.footer-cart-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-logout a {
   color: rgba(255, 255, 255, 0.3);
 }
 
 .socials-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.social-item {
+  margin: 0 10px;
+}
+
+.social-item a {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  opacity: 0.3;
+}
+
+.social-item a:hover,
+.social-item a:focus {
+  opacity: 0.6;
+}
+
+.social-item a:active {
+  opacity: 0.1;
+}
+
+.social-facebook {
+  background-image: url("../img/facebook.svg");
+}
+
+.social-instagram {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-twitter {
+  background-image: url("../img/twitter.svg");
 }
 
 .modal {
@@ -915,49 +1048,9 @@ item-add:focus {
 
 /* --- Стили для сетки --- */
 
-.container {
-  width: 1160px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
 
-.header {
-  margin-top: 40px;
-}
-
-.navigation-wrapper {
-  background-color: #f7e296;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  width: 1040px;
-  margin: 0 auto;
-}
-
-.user-navigation-wrapper {
-  display: flex;
-}
-
-.search-form {
-  width: 500px;
-}
 
 .site-navigation {
-  padding: 0;
-}
-
-.page-title {
-  padding-left: 60px;
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.user-navigation {
-  width: 500px;
-  margin: 0;
   padding: 0;
 }
 
@@ -965,22 +1058,6 @@ item-add:focus {
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
-}
-
-.breadcrumbs {
-  padding: 0;
-  padding-left: 60px;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.decor-line {
-  width: 80px;
-  height: 7px;
-}
-
-.information .decor-line {
-  background-color: #000000;
 }
 
 .promo-slider {
@@ -1141,9 +1218,6 @@ item-add:focus {
   margin-bottom: 40px;
 }
 
-.index-column {
-  width: 560px;
-}
 
 .about-us {
   padding-right: 100px;
@@ -1266,21 +1340,4 @@ item-add:focus {
   margin: 0;
 }
 
-.footer {
-  padding-top: 65px;
-  padding-bottom: 62px;
-}
 
-.footer-row-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-user-navigation {
-  padding: 0;
-  margin: 0;
-}
-
-footer .decor-line {
-  background-color: #ffc600;
-}
