@@ -51,13 +51,84 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation,
-.site-navigation ul,
-.user-navigation {
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: relative;
+
+  margin-top: 40px;
+}
+
+.header-logo {
+  position: absolute;
+  top: -20px;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.navigation-wrapper {
+  background-color: #f7e296;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.top-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cart-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.user-navigation a {
+.user-navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 260px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-navigation li {
+  margin-right: 20px;
+}
+
+.user-navigation li:last-child {
+  margin-right: 0;
+}
+
+.cart-navigation {
+  width: 220px;
+}
+
+.user-navigation a,
+.cart-navigation a {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -65,6 +136,46 @@ body {
   color: rgba(0, 0, 0, 1);
   line-height: 30px;
   text-decoration: none;
+}
+
+.user-navigation span,
+.cart-navigation span {
+  margin-left: 12px;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.cart-navigation a:hover,
+.cart-navigation a:focus {
+  opacity: 0.6;
+}
+
+.user-navigation a:active,
+.cart-navigation a:active {
+  opacity: 0.3;
+}
+
+.logout a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.site-navigation,
+.site-navigation ul {
+  list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 59px;
+  padding: 0;
+
+  position: relative;
 }
 
 .site-navigation a {
@@ -78,28 +189,55 @@ body {
   text-decoration: none;
 }
 
-.user-navigation a:hover,
 .site-navigation a:hover,
-.user-navigation a:focus,
 .site-navigation a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation a:active,
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.logout a {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.logout a:hover {
-  color: rgba(0, 0, 0, 1);
-}
-
 .site-subnavigation {
   display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  min-height: 132px;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  z-index: 1;
+
+  background-color: #f7e296;
+
+  box-sizing: border-box;
+}
+
+.site-navigation-item {
+  margin-right: 37px;
+}
+
+.site-navigation-item:last-child {
+  margin-right: 0;
+}
+
+.site-navigation-left {
+  flex-grow: 2.8;
+}
+
+.site-navigation-center {
+  flex-grow: 1;
+}
+
+.site-navigation-item:hover > ul {
+  display: flex;
 }
 
 .site-subnavigation a {
@@ -109,6 +247,37 @@ body {
   line-height: 30px;
   letter-spacing: 1px;
   text-transform: none;
+}
+
+.catalog-link {
+  position: relative;
+  padding-right: 16px;
+}
+
+.catalog-link::after {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  right: -16px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  min-height: 49px;
+  padding-right: 60px;
+  margin-right: 40px;
 }
 
 .search-form input,
@@ -124,6 +293,22 @@ body {
   border: none;
 }
 
+.search-form input{
+  display: block;
+  width: 355px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 16px;
+  padding-left: 36px;
+
+  box-sizing: border-box;
+
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 18px;
+  background-size: 16px 16px;
+}
+
 .search-form input:hover,
 .search-form input[placeholder]:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -134,9 +319,15 @@ body {
 .search-form input:active,
 .search-form input[placeholder]:active {
   color: rgba(0, 0, 0, 1);
+  border-bottom: 2px solid #000000;
+  outline: transparent;
 }
 
 .search-button {
+  display: none;
+
+  padding: 7px 16px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -146,6 +337,10 @@ body {
 
   background-color: transparent;
   border: 2px solid #000000;
+}
+
+.search-input:focus + .search-button{
+  display: block;
 }
 
 .search-button:hover,
