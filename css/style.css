@@ -862,7 +862,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   color: #000000;
   text-align: left;
 }
@@ -873,21 +873,65 @@ body {
   text-decoration: none;
 }
 
+.catalog-item {
+  position: relative;
+}
+
+.new-item::before {
+  content: "";
+
+  position: absolute;
+  top: 29px;
+  right: 26px;
+
+  width: 60px;
+  height: 61px;
+
+  background-image: url("../img/label-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .item-price {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   color: #464646;
+  white-space: nowrap;
 }
 
 .item-img-overlay {
   display: none;
-  background-color: rgba(202, 202, 202, 0.7);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 360px;
+  height: 380px;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.item-img-overlay .button {
+  margin-top: 48px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.catalog-item:hover .item-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-add {
+  display: block;
+  padding: 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -895,12 +939,14 @@ body {
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.5);
 
+  cursor: pointer;
+
   background-color: transparent;
   border: none;
 }
 
 .item-add:hover,
-item-add:focus {
+.item-add:focus {
   color: rgba(0, 0, 0, 1);
 }
 
