@@ -692,11 +692,22 @@ body {
   list-style: none;
 }
 
+.filter-form {
+  margin-top: 70px;
+}
+
 .filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
   border: none;
 }
 
 .filter legend {
+  position: relative;
+
+  padding-top: 17px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -705,9 +716,39 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
+.filter legend::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.filter .button {
+  width: 200px;
+}
+
 .filter ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.filter-option {
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter-input + label {
@@ -717,6 +758,70 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 1);
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -40px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  display: none;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -40px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -40px;
+
+  width: 25px;
+  height: 25px;
+
+  border: 4px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: -32px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .filter h2,
