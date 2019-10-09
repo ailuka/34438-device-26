@@ -454,12 +454,138 @@ img {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.promo-slider {
+  height: 520px;
+  margin-bottom: 75px;
+  background-image: linear-gradient( #f7e296 113px, transparent 113px);
+  position: relative;
+}
+
+.promo-controls {
+  position: absolute;
+  right: 80px;
+  top: 332px;
+  z-index: 20;
+}
+
+.promo-controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+
+  position: relative;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #464646;
+  border-radius: 50%;
+  cursor: pointer;
+
+  font-size: 0;
+}
+
+.promo-slide {
+  display: none;
+}
+
+#control-slider-1:checked ~ .promo-slides-container #promo-slide-1,
+#control-slider-2:checked ~ .promo-slides-container #promo-slide-2,
+#control-slider-3:checked ~ .promo-slides-container #promo-slide-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#control-slider-1:checked ~ .promo-controls label[for="control-slider-1"]::after,
+#control-slider-2:checked ~ .promo-controls label[for="control-slider-2"]::after,
+#control-slider-3:checked ~ .promo-controls label[for="control-slider-3"]::after {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 2px;
+  height: 2px;
+
+  background-color: transparent;
+  border: 2px solid #464646;
+  border-radius: 50%;
+}
+
+.promo-decor-line {
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+.promo-image-wrapper,
+.promo-description-wrapper {
+  width: 560px;
+}
+
+.promo-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-description-wrapper {
+  position: relative;
+}
+
+.promo-decor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-decor-line {
+  margin-top: 39px;
+}
+
+.promo-description {
+  /* position: absolute;
+  top: 82px; */
+  margin-top: -80px;
+  margin-right: 60px;
+}
+
+.promo-description h3 {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.promo-description p {
+  margin: 33px 0;
+}
+
+.promo-description table {
+  margin-top: 50px;
+}
+
+.promo-description td,
+.promo-description th {
+  padding-right: 80px;
+}
+
+.promo-description td:last-child,
+.promo-description th:last-child {
+  padding-right: 0;
+}
+
+.promo-slide .button {
+  width: 220px;
+}
+
 .promo-slide-number {
+  margin-right: 60px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 179px;
-  line-height: 179px;
-  letter-spacing: 1px;
+  line-height: 161px;
+  letter-spacing: 0.1px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -502,10 +628,6 @@ img {
   line-height: 48px;
   letter-spacing: 1px;
   color: #000000;
-}
-
-.promo-controls {
-  list-style: none;
 }
 
 .product-category-list {
@@ -1227,86 +1349,7 @@ footer .decor-line {
   margin-bottom: 90px;
 }
 
-.promo-slider {
-  height: 520px;
-  margin-bottom: 75px;
-  background-image: linear-gradient( #f7e296 113px, transparent 113px);
-  position: relative;
-}
 
-.promo-controls {
-  /* временно */
-  position: absolute;
-  right: 80px;
-  top: 327px;
-}
-
-.promo-decor-line {
-  width: 100px;
-  height: 7px;
-  background-color: #ffffff;
-}
-
-.promo-slide {
-  display: flex;
-  justify-content: space-between;
-}
-
-.promo-image-wrapper,
-.promo-description-wrapper {
-  width: 560px;
-}
-
-.promo-image-wrapper img {
-  display: block;
-  margin: auto;
-}
-
-.promo-description-wrapper {
-  position: relative;
-}
-
-.promo-decor {
-  display: flex;
-  justify-content: space-between;
-}
-
-.promo-decor-line {
-  margin-top: 39px;
-}
-
-.promo-slide-number {
-  margin-right: 60px;
-}
-
-.promo-description {
-  position: absolute;
-  top: 93px;
-  margin-right: 60px;
-}
-
-.promo-description h3 {
-  margin: 0;
-  margin-bottom: 33px;
-}
-
-.promo-description p {
-  margin: 33px 0;
-}
-
-.promo-description table {
-  margin-top: 50px;
-}
-
-.promo-description td,
-.promo-description th {
-  padding-right: 80px;
-}
-
-.promo-description td:last-child,
-.promo-description th:last-child {
-  padding-right: 0;
-}
 
 .product-categories {
   padding-bottom: 80px;

@@ -85,103 +85,110 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
       <div class="container">
+
         <section class="promo-slider">
           <h2 class="visually-hidden">Промо-товары</h2>
-          <section class="promo-slide">
-            <div class="promo-image-wrapper">
-              <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка, доступная в магазине гаджетов «Девайс»">
-            </div>
-            <div class="promo-description-wrapper">
-              <div class="promo-decor">
+          <input class="visually-hidden promo-input" type="radio" name="promo-slider" id="control-slider-1" checked>
+          <input class="visually-hidden promo-input" type="radio" name="promo-slider" id="control-slider-2">
+          <input class="visually-hidden promo-input" type="radio" name="promo-slider" id="control-slider-3">
+          <div class="promo-controls">
+            <label for="control-slider-1">Перейти на слайд 1</label>
+            <label for="control-slider-2">Перейти на слайд 2</label>
+            <label for="control-slider-3">Перейти на слайд 3</label>
+          </div>
+          <div class="promo-slides-container">
+            <section class="promo-slide" id="promo-slide-1">
+              <div class="promo-image-wrapper">
+                <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка, доступная в магазине гаджетов «Девайс»">
+              </div>
+              <div class="promo-description-wrapper">
+                <div class="promo-decor">
                 <div class="promo-decor-line"></div>
                 <div class="promo-slide-number">01</div>
-              </div>
-              <div class="promo-description">
-                <h3>Делай селфи, как Бен Стиллер!</h3>
-                <p>Самая длинная палка для селфи доступна в нашем магазине.
+                </div>
+                <div class="promo-description">
+                  <h3>Делай селфи,
+                    как Бен Стиллер!
+                  </h3>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a class="button" href="">Подробнее</a>
-                <table>
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </table>
+                  </p>
+                  <a class="button" href="">Подробнее</a>
+                  <table>
+                    <tr>
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr>
+                      <th>Длина палки</th>
+                      <th>Вес палки</th>
+                      <th>Материал</th>
+                    </tr>
+                  </table>
+                </div>
               </div>
-            </div>
-          </section>
-          <section style="display: none;" class="promo-slide">
-            <div class="promo-image-wrapper">
-              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслеты для мотивации">
-            </div>
-            <div class="promo-description-wrapper">
-              <div class="promo-decor">
-                <div class="promo-decor-line"></div>
-                <div class="promo-slide-number">02</div>
+            </section>
+            <section class="promo-slide" id="promo-slide-2">
+              <div class="promo-image-wrapper">
+                <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслеты для мотивации">
               </div>
-              <div class="promo-description">
-                <h3>Худеем правильно!</h3>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button" href="">Подробнее</a>
-                <table>
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <th>Без подзарядки</th>
-                  </tr>
-                </table>
+              <div class="promo-description-wrapper">
+                <div class="promo-decor">
+                  <div class="promo-decor-line"></div>
+                  <div class="promo-slide-number">02</div>
+                </div>
+                <div class="promo-description">
+                  <h3>Худеем
+                    правильно!
+                  </h3>
+                  <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                    не пропускать занятия и соблюдать диету.</p>
+                  <a class="button" href="">Подробнее</a>
+                  <table>
+                    <tr>
+                      <td>48 часов</td>
+                    </tr>
+                    <tr>
+                      <th>Без подзарядки</th>
+                    </tr>
+                  </table>
+                </div>
               </div>
-            </div>
-          </section>
-          <section style="display: none;" class="promo-slide">
-            <div class="promo-image-wrapper">
-              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с мощным лазером">
-            </div>
-            <div class="promo-description-wrapper">
-              <div class="promo-decor">
-                <div class="promo-decor-line"></div>
-                <div class="promo-slide-number">03</div>
+            </section>
+            <section class="promo-slide" id="promo-slide-3">
+              <div class="promo-image-wrapper">
+                <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с мощным лазером">
               </div>
-              <div class="promo-description">
-                <h3>Порхает как бабочка, жалит как пчела!</h3>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="button" href="">Подробнее</a>
-                <table>
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
-                    <th>Дальность полета</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                </table>
+              <div class="promo-description-wrapper">
+                <div class="promo-decor">
+                  <div class="promo-decor-line"></div>
+                  <div class="promo-slide-number">03</div>
+                </div>
+                <div class="promo-description">
+                  <h3>Порхает как бабочка,
+                    жалит как пчела!
+                  </h3>
+                  <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a class="button" href="">Подробнее</a>
+                  <table>
+                    <tr>
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr>
+                      <th>Дальность полета</th>
+                      <th>Радиус поражения</th>
+                    </tr>
+                  </table>
+                </div>
               </div>
-            </div>
-          </section>
-          <ul class="promo-controls">
-            <li>
-              <label class="visually-hidden" for="control-slider-1">Перейти на слайд 1</label>
-              <input type="radio" name="promo-slider" id="control-slider-1">
-            </li>
-            <li>
-              <label class="visually-hidden" for="control-slider-2">Перейти на слайд 2</label>
-              <input type="radio" name="promo-slider" id="control-slider-2">
-            </li>
-            <li>
-              <label class="visually-hidden" for="control-slider-3">Перейти на слайд 3</label>
-              <input type="radio" name="promo-slider" id="control-slider-3">
-            </li>
-          </ul>
+            </section>
+          </div>
+
         </section>
+
         <section class="product-categories">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="product-category-list">
