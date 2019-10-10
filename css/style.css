@@ -789,7 +789,24 @@ img {
 }
 
 .partners-list {
+  padding: 0;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+
   list-style: none;
+}
+
+.partner-color {
+  display: none;
+}
+
+.partner-item:hover .partner-color {
+  display: block;
+}
+
+.partner-item:hover .partner-grey {
+  display: none;
 }
 
 .index-column {
@@ -1476,13 +1493,6 @@ footer .decor-line {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.partners-list {
-  padding: 0;
-  margin: 100px 0;
-  display: flex;
-  justify-content: space-around;
 }
 
 .about-us {
