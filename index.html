@@ -85,7 +85,6 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
       <div class="container">
-
         <section class="promo-slider">
           <h2 class="visually-hidden">Промо-товары</h2>
           <input class="visually-hidden promo-input" type="radio" name="promo-slider" id="control-slider-1" checked>
@@ -188,7 +187,6 @@
           </div>
 
         </section>
-
         <section class="product-categories">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="product-category-list">
@@ -246,36 +244,36 @@
       <section class="services">
         <div class="container">
           <h2 class="visually-hidden">Сервисы</h2>
+          <input class="visually-hidden" type="radio" name="group-services" id="service-delivery" checked>
+          <input class="visually-hidden" type="radio" name="group-services" id="service-warranty">
+          <input class="visually-hidden" type="radio" name="group-services" id="service-credit">
           <ul class="services-list">
-            <li class="service-item">
-              <input type="radio" name="group-services" id="service-delivery" checked>
+            <li class="service-item" id="service-item-delivery">
               <label for="service-delivery">Доставка</label>
             </li>
-            <li class="service-item">
-              <input type="radio" name="group-services" id="service-warranty">
+            <li class="service-item" id="service-item-warranty">
               <label for="service-warranty">Гарантия</label>
             </li>
-            <li class="service-item">
-              <input type="radio" name="group-services" id="service-credit">
+            <li class="service-item" id="service-item-credit">
               <label for="service-credit">Кредит</label>
             </li>
           </ul>
           <div class="services-wrapper">
-            <section class="service-description">
+            <section class="service-description delivery-image" id="service-delivery-description">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.
               </p>
             </section>
-            <section style="display: none;" class="service-description">
+            <section class="service-description warranty-image" id="service-warranty-description">
               <h3>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит
                   дом - не переживайте, мы выдадим вам новый.
                   Товар, не дом, конечно же.
               </p>
             </section>
-            <section style="display: none;" class="service-description">
+            <section class="service-description credit-image" id="service-credit-description">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные
                   консультанты подберут для вас наиболее выгодные
