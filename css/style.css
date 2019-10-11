@@ -1117,6 +1117,21 @@ img {
   box-sizing: border-box;
 }
 
+.filter-input:hover + label::before,
+.filter-input:hover + label::after {
+  opacity: 0.6;
+}
+
+.filter-input:active + label::before,
+.filter-input:active + label::after {
+  opacity: 1;
+}
+
+.filter-input:disabled + label::before,
+.filter-input:disabled + label::after {
+  opacity: 0.25;
+}
+
 .filter h2,
 .sort h2 {
   font-family: "Gilroy", "Arial", sans-serif;
