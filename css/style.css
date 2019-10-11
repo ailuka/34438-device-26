@@ -1769,6 +1769,10 @@ footer .decor-line {
   margin-top: 37px;
 }
 
+.item-name a {
+  white-space: pre-line;
+}
+
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
