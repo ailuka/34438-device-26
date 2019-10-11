@@ -1128,6 +1128,85 @@ img {
   text-transform: uppercase;
 }
 
+.range-filter {
+  margin-top: 25px;
+  width: 200px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 15px;
+  padding-top: 15px;
+}
+
+.range-controls .scale {
+   height: 2px;
+
+   background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle:active {
+  transform: scale(1.1);
+}
+
+.range-controls .toggle-min {
+  left: -2px;
+}
+
+.range-controls .toggle-max {
+  left: 107px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 2px;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.2);
+
+  border: none;
+  background: transparent;
+}
+
 .sort-options-list {
   list-style: none;
 }

@@ -108,10 +108,33 @@
             <form class="filter-form" action="http://echo.htmlacademy.ru" method="GET">
               <fieldset>
                 <legend>Стоимость</legend>
+
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                </div>
+                <div class="price-controls">
+                  <label for="" class="min-price">
+                    от
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label for="" class="max-price">
+                    до
+                    <input type="text" name="max-price" value="5000">
+                  </label>
+                </div>
+
+<!--
                 <label class="visually-hidden" for="control-min-price">Минимальная стоимость</label>
                 <input type="number" name="min-price" id="control-min-price">
                 <label class="visually-hidden" for="control-max-price">Максимальная стоимость</label>
                 <input type="number" name="max-price" id="control-max-price">
+-->
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
