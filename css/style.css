@@ -742,6 +742,10 @@ img {
 
 .services .container {
   display: flex;
+  display: -ms-flexbox;
+  -ms-flex-pack: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
