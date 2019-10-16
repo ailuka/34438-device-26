@@ -1996,3 +1996,9 @@ footer .decor-line {
   background-image: url("../img/twitter.svg");
 }
 
+
+_:-ms-fullscreen, :root .button {
+  background-image: linear-gradient(transparent 17px, #f0c52e 17px, #f0c52e 25px, transparent 25px);
+}
+
+
