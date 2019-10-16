@@ -350,7 +350,7 @@ img {
 }
 
 .search-button {
-  display: none;
+  display: block;
 
   padding: 7px 16px;
 
@@ -363,10 +363,12 @@ img {
 
   background-color: transparent;
   border: 2px solid #000000;
+
+  opacity: 0;
 }
 
 .search-input:focus + .search-button{
-  display: block;
+  opacity: 1;
 }
 
 .search-button:hover,
