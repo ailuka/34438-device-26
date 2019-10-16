@@ -14,8 +14,8 @@
        url("../fonts/gilroylight.woff") format('woff');
 }
 
-
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
