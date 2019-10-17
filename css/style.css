@@ -398,6 +398,10 @@ _:-ms-fullscreen, :root .button {
   overflow: hidden;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .page-title {
   margin: 0;
   margin-top: 38px;
