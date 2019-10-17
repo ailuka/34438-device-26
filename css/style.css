@@ -1819,12 +1819,20 @@ img {
 .pagination-button {
   display: block;
   padding-top: 23px;
-  padding-right: 31px;
   padding-bottom: 23px;
-  padding-left: 31px;
 
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
+}
+
+.prev {
+  padding-right: 31px;
+  padding-left: 30px;
+}
+
+.next {
+  padding-right: 26px;
+  padding-left: 31px;
 }
 
 .pagination-button:hover,
