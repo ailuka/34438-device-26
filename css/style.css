@@ -1940,9 +1940,21 @@ img {
   margin-left: 7px;
 }
 
-footer .decor-line {
+.footer-row-bottom {
+  justify-content: flex-end;
+  position: relative;
+}
+
+.footer-row-bottom::before {
+  content: "";
+
   width: 80px;
   height: 7px;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
   background-color: #ffc600;
 }
 
@@ -2036,7 +2048,8 @@ footer .decor-line {
 }
 
 .socials {
-  margin-left: -55px;
+  margin: auto;
+  padding-left: 24px;
 }
 
 .socials-list {
@@ -2093,4 +2106,8 @@ _:-ms-fullscreen, :root .services-wrapper {
 
 _:-ms-fullscreen, :root .service-item label{
   background-image: linear-gradient(transparent 9px, #f0c52e 9px, #f0c52e 17px, transparent 17px);
+}
+
+_:-ms-fullscreen, :root .footer-row-bottom {
+  justify-content: space-between;
 }
