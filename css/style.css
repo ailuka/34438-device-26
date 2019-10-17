@@ -1987,6 +1987,13 @@ img {
   line-height: 30px;
 }
 
+.footer .phone {
+  margin: 0;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .footer-site-navigation {
   display: flex;
   margin: 0;
