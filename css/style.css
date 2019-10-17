@@ -1135,7 +1135,7 @@ _:-ms-fullscreen, :root .service-item label{
   padding-top: 100px;
   padding-bottom: 70px;
 
-  top: 155px;
+  top: 10%;
   left: 50%;
 }
 
@@ -1220,7 +1220,7 @@ _:-ms-fullscreen, :root .service-item label{
   height: 559px;
   margin-left: -480px;
 
-  top: 155px;
+  top: 10%;
   left: 50%;
 }
 
