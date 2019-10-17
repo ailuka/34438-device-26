@@ -1355,6 +1355,8 @@ img {
 }
 
 .filter .button {
+  position: relative;
+
   width: 200px;
 }
 
