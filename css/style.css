@@ -1586,7 +1586,7 @@ _:-ms-fullscreen, :root .service-item label{
 
   display: block;
   width: 100vw;
-  height: 70px;
+  height: 100%;
 
   position: absolute;
   top: 0;
