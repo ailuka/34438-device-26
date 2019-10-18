@@ -225,7 +225,7 @@ _:-ms-fullscreen, :root .button {
   margin: 0;
   padding-top: 20px;
   padding-right: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
   padding-left: 60px;
   box-sizing: border-box;
 
@@ -238,19 +238,24 @@ _:-ms-fullscreen, :root .button {
 }
 
 .site-navigation-item {
-  margin-right: 36px;
+  margin-right: 34px;
+}
+
+.site-navigation-item:first-child {
+  margin-right: 20px;
 }
 
 .site-navigation-item:last-child {
-  margin-right: 0;
+  margin-right: -3px;
 }
 
 .site-navigation-left {
-  flex-grow: 2.8;
+  flex-grow: 2;
 }
 
 .site-navigation-center {
   flex-grow: 0.7;
+  margin-right: 9px;
 }
 
 .site-navigation-item:hover > .site-subnavigation {
