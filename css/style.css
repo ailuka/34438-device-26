@@ -747,7 +747,8 @@ _:-ms-fullscreen, :root .button {
 .services {
   width: 100%;
   padding-bottom: 69px;
-  background-image: linear-gradient(transparent 100px, #e5e5e5 100px, #e5e5e5 388px, transparent 388px);
+
+  background-image: linear-gradient(transparent 100px, #e5e5e5 100px);
 }
 
 .services .container {
@@ -766,7 +767,7 @@ _:-ms-fullscreen, :root .button {
   padding-bottom: 70px;
 
   width: 275px;
-  height: 169px;
+
   border-right: 7px solid #000000;
 
   list-style: none;
@@ -782,29 +783,30 @@ _:-ms-fullscreen, :root .services-wrapper {
 
 .service-description {
   display: none;
-  padding-right: 330px;
+  padding-right: 300px;
   padding-top: 79px;
+  padding-bottom: 10px;
 }
 
 .delivery-image {
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
   background-size: 136px 164px;
-  background-position: 90% 100%;
+  background-position: 557px 86px;
 }
 
 .warranty-image {
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
   background-size: 171px 195px;
-  background-position: 90% 100%;
+  background-position: 542px 63px;
 }
 
 .credit-image {
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-size: 156px 188px;
-  background-position: 90% 100%;
+  background-position: 532px 63px;
 }
 
 .service-description h3 {
