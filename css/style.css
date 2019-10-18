@@ -1965,7 +1965,7 @@ _:-ms-fullscreen, :root .service-item label{
 }
 
 .footer-user-navigation-link span {
-  margin-left: 7px;
+  margin-left: 6px;
 }
 
 _:-ms-fullscreen, :root .footer-row-bottom {
@@ -2035,7 +2035,7 @@ _:-ms-fullscreen, :root .footer-row-bottom {
 }
 
 .footer-site-navigation-item{
-  margin: 10px 17px;
+  margin: 9px 17px;
   margin-bottom: 0;
 }
 
@@ -2084,6 +2084,11 @@ _:-ms-fullscreen, :root .footer-row-bottom {
 
 .footer-logout a {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.inner-footer .footer-user-navigation,
+.inner-footer .footer-cart-navigation {
+  margin-top: -2px;
 }
 
 .socials {
