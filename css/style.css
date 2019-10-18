@@ -479,8 +479,7 @@ _:-ms-fullscreen, :root .button {
 }
 
 .promo-slider {
-  height: 520px;
-  margin-bottom: 75px;
+  margin-bottom: 105px;
   position: relative;
 
   background-image: linear-gradient( #f7e296 113px, transparent 113px);
@@ -488,8 +487,8 @@ _:-ms-fullscreen, :root .button {
 
 .promo-controls {
   position: absolute;
-  top: 328px;
   right: 68px;
+  bottom: 137px;
   z-index: 20;
 }
 
