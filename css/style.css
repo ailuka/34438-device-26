@@ -1756,6 +1756,13 @@ _:-ms-fullscreen, :root .service-item label{
   position: relative;
 }
 
+.catalog-item .image-wrapper {
+  width: 360px;
+  height: 380px;
+
+  background-color: #ebebeb;
+}
+
 .new-item::before {
   content: "";
 
