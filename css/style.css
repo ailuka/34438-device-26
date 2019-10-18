@@ -555,6 +555,8 @@ _:-ms-fullscreen, :root .button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: transparent;
 }
 
 .promo-description-wrapper {
