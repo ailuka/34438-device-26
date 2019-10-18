@@ -1565,6 +1565,8 @@ _:-ms-fullscreen, :root .service-item label{
   display: inline-block;
   width: 45%;
 
+  vertical-align: baseline;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
