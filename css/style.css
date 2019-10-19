@@ -923,6 +923,12 @@ _:-ms-fullscreen, :root .service-item label{
   background-image: none;
 }
 
+#service-delivery:focus ~ .services-list label[for="service-delivery"],
+#service-warranty:focus ~ .services-list label[for="service-warranty"],
+#service-credit:focus ~ .services-list label[for="service-credit"] {
+  outline: #1757cc auto 5px;
+}
+
 .partners-list {
   display: flex;
   justify-content: space-between;
