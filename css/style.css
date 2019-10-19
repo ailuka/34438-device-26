@@ -1440,6 +1440,10 @@ _:-ms-fullscreen, :root .service-item label{
   user-select: none;
 }
 
+.filter-option label:focus {
+  border: 1px solid red;
+}
+
 .filter-input + label {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -1518,6 +1522,17 @@ _:-ms-fullscreen, :root .service-item label{
   opacity: 0.6;
 }
 
+
+.filter-input:focus + label::before,
+.filter-input:focus + label::after {
+  opacity: 0.6;
+  outline: #1757cc auto 5px;
+}
+
+.filter-input-radio:focus + label::after {
+  outline: none;
+}
+
 .filter-input:active + label::before,
 .filter-input:active + label::after {
   opacity: 1;
@@ -1591,6 +1606,7 @@ _:-ms-fullscreen, :root .service-item label{
 }
 
 .price-controls {
+  position: relative;
   font-size: 0;
 }
 
