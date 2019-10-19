@@ -427,16 +427,23 @@ _:-ms-fullscreen, :root .button {
   opacity: 1;
 }
 
-.search-button:hover,
+.search-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: #000000;
+  opacity: 0;
+}
+
 .search-button:focus {
   color: rgba(255, 255, 255, 1);
   background-color: #000000;
+  opacity: 1;
 }
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
   outline: transparent;
+  opacity: 1;
 }
 
 .visually-hidden {
