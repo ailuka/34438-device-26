@@ -568,7 +568,7 @@ _:-ms-fullscreen, :root .button {
 #control-slider-1:focus ~ .promo-controls label[for="control-slider-1"]::after,
 #control-slider-2:focus ~ .promo-controls label[for="control-slider-2"]::after,
 #control-slider-3:focus ~ .promo-controls label[for="control-slider-3"]::after {
-  outline: #1757cc auto 5px;
+  outline: 5px solid #1757cc;
 }
 
 .promo-image-wrapper,
@@ -926,7 +926,7 @@ _:-ms-fullscreen, :root .service-item label{
 #service-delivery:focus ~ .services-list label[for="service-delivery"],
 #service-warranty:focus ~ .services-list label[for="service-warranty"],
 #service-credit:focus ~ .services-list label[for="service-credit"] {
-  outline: #1757cc auto 5px;
+  outline: 5px solid #1757cc;
 }
 
 .partners-list {
@@ -1526,7 +1526,7 @@ _:-ms-fullscreen, :root .service-item label{
 .filter-input:focus + label::before,
 .filter-input:focus + label::after {
   opacity: 0.6;
-  outline: #1757cc auto 5px;
+  outline: 5px solid #1757cc;
 }
 
 .filter-input-radio:focus + label::after {
@@ -1777,7 +1777,7 @@ _:-ms-fullscreen, :root .service-item label{
 
 .sort-up-down a:focus::before,
 .sort-up-down a:focus::after {
-  outline: #1757cc auto 5px;
+  outline: 5px solid #1757cc;
 }
 
 .sort-up-down a:active,
