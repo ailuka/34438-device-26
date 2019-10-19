@@ -321,7 +321,8 @@ _:-ms-fullscreen, :root .button {
 }
 
 .search-form input,
-.search-form input[placeholder] {
+.search-form input[placeholder],
+.search-form input::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -330,7 +331,13 @@ _:-ms-fullscreen, :root .button {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: transparent;
-  border: none;
+}
+
+.search-form input[placeholder] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid transparent;
 }
 
 .search-form input{
@@ -346,20 +353,29 @@ _:-ms-fullscreen, :root .button {
   background-repeat: no-repeat;
   background-position: 2px 18px;
   background-size: 16px 16px;
+  border-bottom: 2px solid transparent;
 }
 
 .search-form input:hover,
-.search-form input[placeholder]:hover {
+.search-form input[placeholder]:hover,
+.search-form input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search-form:focus input,
+.search-form:active input,
 .search-form input:focus,
-.search-form input[placeholder]:focus,
 .search-form input:active,
+.search-form input[placeholder]:focus,
 .search-form input[placeholder]:active {
   color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid #000000;
   outline: transparent;
+}
+
+.search-form input[placeholder]:focus,
+.search-form input[placeholder]:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .search-button {
@@ -379,7 +395,10 @@ _:-ms-fullscreen, :root .button {
   opacity: 0;
 }
 
-.search-input:focus + .search-button{
+.search-form:focus .search-button,
+.search-form:active .search-button,
+.search-input:focus + .search-button,
+.search-input:active + .search-button {
   opacity: 1;
 }
 
