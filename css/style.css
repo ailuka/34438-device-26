@@ -86,12 +86,12 @@ _:-ms-fullscreen, :root .button {
   top: -18px;
 }
 
-.header-logo:hover,
-.header-logo:focus {
+.inner-header .header-logo:hover,
+.inner-header .header-logo:focus {
   opacity: 0.6;
 }
 
-.header-logo:active {
+.inner-header .header-logo:active {
   opacity: 0.3;
 }
 
@@ -2013,14 +2013,14 @@ _:-ms-fullscreen, :root .footer-row-bottom {
   flex-grow: 2;
 }
 
-.footer-logo:hover,
-.footer-logo:focus,
+.inner-footer .footer-logo:hover,
+.inner-footer .footer-logo:focus,
 .copyright:hover,
 .copyright:focus {
   opacity: 0.6;
 }
 
-.footer-logo:active,
+.inner-footer .footer-logo:active,
 .copyright:active {
   opacity: 0.3;
 }
