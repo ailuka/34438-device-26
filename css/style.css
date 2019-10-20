@@ -306,9 +306,11 @@ _:-ms-fullscreen, :root .button {
 
 .search-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-grow: 0;
   width: 440px;
-  min-height: 49px;
+  height: 51px;
   margin-right: 100px;
   box-sizing: border-box;
 
@@ -326,7 +328,9 @@ _:-ms-fullscreen, :root .button {
   color: rgba(0, 0, 0, 0.3);
 
   display: block;
-  width: 360px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 355px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 16px;
@@ -343,6 +347,7 @@ _:-ms-fullscreen, :root .button {
   background-position: 4px 16px;
   background-size: 16px 16px;
   border: none;
+  border-bottom: 2px solid #f7e296;
 }
 
 .search-label {
@@ -363,9 +368,19 @@ _:-ms-fullscreen, :root .button {
   opacity: 0;
 }
 
+.search-form input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.search-form input:-moz-ui-invalid {
+  box-shadow: none;
+}
+
 .search-form input:invalid {
   outline: 0;
+  box-shadow: none;
 }
+
 
 .search-form input:invalid + label {
   opacity: 1;
@@ -374,11 +389,6 @@ _:-ms-fullscreen, :root .button {
 .search-form input:hover,
 .search-form input:hover + label {
   color: rgba(0, 0, 0, 0.6);
-}
-
-.search-form:focus,
-.search-form:active {
-  border-bottom: 2px solid #000000;
 }
 
 .search-form input:focus,
@@ -394,8 +404,12 @@ _:-ms-fullscreen, :root .button {
 }
 
 .search-button {
-  display: block;
+  display: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 85px;
   padding: 7px 16px;
+  box-sizing: border-box;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -409,34 +423,29 @@ _:-ms-fullscreen, :root .button {
 
   background-color: transparent;
   border: 2px solid #000000;
-
-  opacity: 0;
 }
 
-.search-form:focus .search-button,
-.search-form:active .search-button,
 .search-input:focus ~ .search-button,
 .search-input:active ~ .search-button {
-  opacity: 1;
+  display: block;
 }
 
 .search-button:hover {
   color: rgba(255, 255, 255, 1);
   background-color: #000000;
-  opacity: 0;
 }
 
 .search-button:focus {
   color: rgba(255, 255, 255, 1);
   background-color: #000000;
-  opacity: 1;
+  display: block;;
 }
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
   outline: transparent;
-  opacity: 1;
+  display: block;
 }
 
 .visually-hidden {
