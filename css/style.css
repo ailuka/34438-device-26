@@ -904,7 +904,7 @@ _:-ms-fullscreen, :root .services-wrapper {
 }
 
 .service-item {
-  padding: 8px 0;
+  padding: 0;
   margin: 25px 0;
 }
 
@@ -923,6 +923,7 @@ _:-ms-fullscreen, :root .service-item label{
 .service-item label {
   display: block;
   width: 160px;
+  padding: 8px 0;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -933,7 +934,11 @@ _:-ms-fullscreen, :root .service-item label{
   text-transform: uppercase;
   text-align: center;
 
-  background-image: linear-gradient(transparent 8px, #f0c52e 8px, #f0c52e 16px, transparent 16px);
+  background-image: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+
+.service-item label:hover {
+  background-color: #f0c52e;
 }
 
 #service-delivery:checked ~ .services-wrapper #service-delivery-description,
