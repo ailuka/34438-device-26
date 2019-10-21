@@ -1590,6 +1590,10 @@ _:-ms-fullscreen, :root .service-item label{
   opacity: 0.25;
 }
 
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
 .filter h2,
 .sort h2 {
   font-family: "Gilroy", "Arial", sans-serif;
