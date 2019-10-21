@@ -2041,6 +2041,10 @@ _:-ms-fullscreen, :root .service-item label{
   margin-bottom: 0;
 }
 
+.footer-top-row {
+  justify-content: flex-start;
+}
+
 .footer-row-center {
   align-items: center;
   margin-bottom: 60px;
@@ -2049,6 +2053,7 @@ _:-ms-fullscreen, :root .service-item label{
 .footer-user-navigation,
 .footer-cart-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2100,16 +2105,19 @@ _:-ms-fullscreen, :root .footer-row-bottom {
   background-color: #ffc600;
 }
 
+.footer-logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: auto;
+  padding-right: 20px;
+}
+
 .footer-logo path {
   fill: #ffc600;
 }
 
 .copyright path {
   fill: #ffc600;
-}
-
-.footer-logo {
-  flex-grow: 2;
 }
 
 .inner-footer .footer-logo:hover,
@@ -2129,7 +2137,12 @@ _:-ms-fullscreen, :root .footer-row-bottom {
   line-height: 30px;
 }
 
+.footer .address {
+  flex-shrink: 0;
+}
+
 .footer .phone {
+  flex-shrink: 0;
   margin: 0;
   line-height: 30px;
   text-decoration: none;
@@ -2138,9 +2151,10 @@ _:-ms-fullscreen, :root .footer-row-bottom {
 
 .footer-site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  margin-left: -35px;
   padding: 0;
+  padding-right: 35px;
   list-style: none;
 }
 
@@ -2203,19 +2217,23 @@ _:-ms-fullscreen, :root .footer-row-bottom {
 
 .socials {
   margin: auto;
-  padding-left: 24px;
 }
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-top: 3px;
+  padding-right: 50px;
+  padding-left: 80px;
   list-style: none;
 }
 
 .social-item {
   margin: 0 12px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 
 .social-item a {
