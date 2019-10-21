@@ -923,7 +923,7 @@ _:-ms-fullscreen, :root .services-wrapper {
 }
 
 _:-ms-fullscreen, :root .service-item label{
-  background-image: linear-gradient(transparent 9px, #f0c52e 9px, #f0c52e 17px, transparent 17px);
+  background-image: linear-gradient(transparent 17px, #f0c52e 17px, #f0c52e 25px, transparent 25px);
 }
 
 .service-item label {
