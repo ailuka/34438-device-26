@@ -109,17 +109,22 @@ _:-ms-fullscreen, :root .button {
 .top-navigation-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding-top: 33px;
 }
 
 .cart-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.cart-navigation li {
+  flex-shrink: 0;
 }
 
 .user-navigation {
@@ -194,6 +199,7 @@ _:-ms-fullscreen, :root .button {
 .site-navigation {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
