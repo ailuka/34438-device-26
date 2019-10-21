@@ -1890,6 +1890,8 @@ _:-ms-fullscreen, :root .service-item label{
 }
 
 .item-img-overlay .button {
+  font-family: "Gilroy", "Arial", sans-serif;
+
   width: 200px;
   margin-top: 48px;
   margin-bottom: 5px;
@@ -1902,7 +1904,7 @@ _:-ms-fullscreen, :root .service-item label{
   align-items: center;
 }
 
-.item-add {
+.catalog-list .item-add {
   display: block;
   padding: 0;
 
