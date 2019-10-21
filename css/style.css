@@ -1491,10 +1491,6 @@ _:-ms-fullscreen, :root .service-item label{
   user-select: none;
 }
 
-.filter-option label:focus {
-  border: 1px solid red;
-}
-
 .filter-input + label {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
